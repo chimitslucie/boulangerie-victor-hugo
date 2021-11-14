@@ -396,10 +396,21 @@ a {
 
 .products__img {
   position: absolute;
-  background: solid rgba(0, 0, 0, 0.4);
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  bottom: 0;
+  right: 0;
+}
 
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  right: 0;
 }
 
 .products__text {
@@ -408,9 +419,10 @@ a {
   text-transform: uppercase;
   color: var(--white);
   position: relative;
+  z-index: 2;
 }
 
-.pain--cereale {
+.product__content--element {
   position: relative;
   width: 310px;
   height: 234px;
