@@ -17,6 +17,10 @@ body {
   color: var(--text);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   max-width: 1180px;
   width: 100%;
@@ -392,6 +396,9 @@ a {
 
 .products__content {
   margin-top: 74px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 150px;
 }
 
 .products__img {
@@ -401,6 +408,8 @@ a {
   z-index: 0;
   bottom: 0;
   right: 0;
+  height: 100%;
+  object-fit: cover;
 }
 
 .blur {
@@ -426,6 +435,139 @@ a {
   position: relative;
   width: 310px;
   height: 234px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 107px;
+  margin-bottom: 127px;
+}
+
+.product__content--element:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.product__content--element:nth-child(1n + 3) {
+  margin-bottom: 0px;
+}
+
+.btn.btn__product {
+  width: 275px;
+  height: 74px;
+  margin: auto;
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.btn.btn__product:hover {
+  border: none;
+  background: var(--white);
+  color: var(--primary);
+}
+
+.banner {
+  margin-top: 169px;
+  background-image: url(../img/accueil/bannière/baguette-1743939_1920.jpg);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+}
+
+.banner__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.banner__text {
+  font-weight: 500;
+  color: var(--white);
+  font-size: 48px;
+  position: relative;
+  z-index: 2;
+}
+
+.contact {
+  margin-top: 165px;
+}
+
+.contact__title {
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.contact__title::after {
+  content: "";
+  width: 150px;
+  height: 5px;
+  background: var(--primary);
+  display: block;
+  margin-top: 17px;
+}
+
+.content__contact {
+  margin-top: 70px;
+}
+
+input,
+textarea,
+select {
+  font-family: "roboto";
+  color: var(--grey);
+  font-size: 16px;
+}
+
+.contact__form {
+  margin-bottom: 40px;
+}
+
+.contact__form:last-of-type {
+  margin-bottom: 47px;
+}
+
+.contact__form-name,
+.contact__form-mail,
+.contact__form-text {
+  border: none;
+  border-bottom: 3px solid var(--primary);
+  height: 33px;
+}
+
+.contact__form-box {
+  width: 474px;
+  padding-left: 16px;
+  color: var(--grey);
+  font-size: 16px;
+  outline: 0;
+}
+
+.contact__form-msg {
+  border: 3px solid var(--primary);
+  height: 217px;
+  padding-top: 14px;
+}
+
+.btn.btn__form {
+  width: 216px;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.content__title {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.contact__element {
   display: flex;
   align-items: center;
   justify-content: center;
