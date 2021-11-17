@@ -516,6 +516,9 @@ a {
 
 .content__contact {
   margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 input,
@@ -560,15 +563,61 @@ select {
   width: 216px;
   height: 55px;
   margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.btn.btn__form:hover {
+  border: none;
+  background: var(--white);
+  color: var(--primary);
 }
 
 .content__title {
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 47px;
+  text-align: center;
+}
+
+.content__title:first-child {
+  margin-bottom: 0;
 }
 
 .contact__element {
   display: flex;
   align-items: center;
-  justify-content: center;
+  margin-bottom: 33px;
+}
+
+.contact__element:last-child {
+  align-items: start;
+  margin-bottom: 0;
+}
+
+.location__img {
+  width: 22px;
+  height: 34px;
+}
+
+.tel__img,
+.mail__img {
+  width: 22px;
+  height: 25px;
+}
+
+.time__img {
+  width: 22px;
+  height: 22px;
+}
+
+.contact__text {
+  font-size: 18px;
+  color: var(--black);
+  font-weight: 500;
+  margin-left: 19px;
+}
+
+.contact__text.text__time {
+  font-weight: 300;
+  color: var(--text);
 }
