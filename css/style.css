@@ -64,6 +64,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.5s;
 }
 
 .topbar__announce {
@@ -99,7 +100,7 @@ a {
 
 .list__link:not(.list__link.logo):before {
   content: "";
-  width: 36px;
+  width: 0;
   height: 5px;
   background: var(--primary);
   display: inline-block;
@@ -107,6 +108,15 @@ a {
   top: 50%;
   left: -25px;
   transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.list__link:not(.list__link.logo):hover:before {
+  width: 36px;
+}
+
+.list__link:not(.list__link.logo).active:before {
+  width: 36px;
 }
 
 .list__link.logo {
@@ -319,6 +329,9 @@ a {
 .team__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  max-width: 739px;
+  margin: 0 auto;
 }
 
 .content__text {
@@ -347,6 +360,7 @@ a {
 .team__img {
   width: 279px;
   height: 279px;
+  object-fit: cover;
 }
 
 .arrows {
@@ -461,7 +475,6 @@ a {
 }
 
 .btn.btn__product:hover {
-  border: none;
   background: var(--white);
   color: var(--primary);
 }
@@ -557,6 +570,7 @@ select {
   border: 3px solid var(--primary);
   height: 217px;
   padding-top: 14px;
+  resize: none;
 }
 
 .btn.btn__form {
@@ -567,7 +581,6 @@ select {
 }
 
 .btn.btn__form:hover {
-  border: none;
   background: var(--white);
   color: var(--primary);
 }
@@ -620,4 +633,79 @@ select {
 .contact__text.text__time {
   font-weight: 300;
   color: var(--text);
+}
+
+.footer {
+  background: var(--black);
+  margin-top: 141px;
+  padding-bottom: 40px;
+}
+
+.facebook__img {
+  width: 21px;
+}
+
+.copyright__img {
+  width: 17px;
+}
+
+.footer__title {
+  color: var(--white);
+  font-size: 20px;
+  margin-bottom: 43px;
+  font-family: "roboto";
+  font-weight: 500;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  padding-top: 78px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.footer__list {
+  list-style: none;
+}
+
+.footer__text {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.page__item,
+.hourly__text {
+  margin-bottom: 18px;
+}
+
+.page__item:last-child,
+.hourly__text:last-child {
+  margin-bottom: 0;
+}
+
+.contact__mail {
+  margin: 18px 0;
+}
+
+.contact__link,
+.contact__mail,
+.contact__facebook {
+  display: block;
+}
+
+a.footer__text:hover,
+.contact__facebook:hover {
+  opacity: 0.5;
+}
+
+.footer__content > div {
+  display: flex;
+  justify-content: center;
 }

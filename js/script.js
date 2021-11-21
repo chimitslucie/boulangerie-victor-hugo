@@ -6,7 +6,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000,
         fade: true,
-        fadeSpeed: 1000,
+        fadeSpeed: 1000
     });
 
     $('#slider-promo').slick({
@@ -16,7 +16,7 @@ $(document).ready(function() {
         autoplay: true,
         autoplaySpeed: 3000,
         fade: true,
-        fadeSpeed: 1000,
+        fadeSpeed: 1000
     });
 
     $('#slider-team').slick({
@@ -24,5 +24,7 @@ $(document).ready(function() {
         dots: false,
         arrows: true,
         autoplay: false,
+        prevArrow: $('.left'),
+        nextArrow: $('.right')
     });
 });
