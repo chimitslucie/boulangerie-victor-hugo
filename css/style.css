@@ -386,7 +386,11 @@ a {
 }
 
 .right {
-  left: 1256px;
+  right: 0;
+}
+
+.left {
+  left: 0;
 }
 
 .products {
@@ -709,3 +713,15 @@ a.footer__text:hover,
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 1270px) {
+  .container {
+    max-width: 1080px;
+  }
+
+  .products__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* width: 280px; height: 214px */
