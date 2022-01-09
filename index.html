@@ -25,28 +25,41 @@
         </div>
         <div class="topbar__nav">
           <div class="container">
-            <nav class="nav">
-              <ul class="nav__list">
-                <li class="list__item">
-                  <a href="#" class="list__link active">Accueil</a>
-                </li>
-                <li class="list__item">
-                  <a href="#" class="list__link">Présentation</a>
-                </li>
-                <li class="list__item">
-                  <a href="#" class="list__link logo"
-                    >boulangerie patisserie
-                    <span class="span__logo">victor hugo</span></a
-                  >
-                </li>
-                <li class="list__item">
-                  <a href="#" class="list__link">Nos produits</a>
-                </li>
-                <li class="list__item">
-                  <a href="#" class="list__link">Contact</a>
-                </li>
-              </ul>
-            </nav>
+            <div>
+              <div class="logo-container">
+                <a href="#" class="logo logo-show-medium"
+                  >boulangerie patisserie
+                  <span class="span__logo">victor hugo</span></a
+                >
+              </div>
+              <nav class="nav">
+                <ul class="nav__list">
+                  <li class="list__item">
+                    <a href="#" class="list__link active">Accueil</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="#" class="list__link">Présentation</a>
+                  </li>
+                  <li class="list__item logo-hidden-medium">
+                    <a href="#" class="list__link logo"
+                      >boulangerie patisserie
+                      <span class="span__logo">victor hugo</span></a
+                    >
+                  </li>
+                  <li class="list__item">
+                    <a href="#" class="list__link">Nos produits</a>
+                  </li>
+                  <li class="list__item">
+                    <a href="#" class="list__link">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="burger">
+                <span class="burger-item"></span>
+                <span class="burger-item"></span>
+                <span class="burger-item"></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -404,36 +417,54 @@
           <div class="footer__content">
             <div class="footer__page">
               <div>
-				<h3 class="footer__title page__title">Pages</h3>
-				<ul class="footer__list">
-				  <li class="page__item"><a href="#" class="page__link footer__text">Accueil</a></li>
-				  <li class="page__item"><a href="#" class="page__link footer__text">Présentation</a></li>
-				  <li class="page__item"><a href="#" class="page__link footer__text">Nos produits</a></li>
-				  <li class="page__item"><a href="#" class="page__link footer__text">Mentions légales</a></li>
-				</ul>
-			  </div>
+                <h3 class="footer__title page__title">Pages</h3>
+                <ul class="footer__list">
+                  <li class="page__item">
+                    <a href="#" class="page__link footer__text">Accueil</a>
+                  </li>
+                  <li class="page__item">
+                    <a href="#" class="page__link footer__text">Présentation</a>
+                  </li>
+                  <li class="page__item">
+                    <a href="#" class="page__link footer__text">Nos produits</a>
+                  </li>
+                  <li class="page__item">
+                    <a href="#" class="page__link footer__text"
+                      >Mentions légales</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="footer__hourly">
               <div>
-				<h3 class="footer__title hourly__title">Horaire d'ouverture</h3>
-				<p class="hourly__text footer__text">Lundi : fermé</p>
-				<p class="hourly__text footer__text">Du mardi au samedi : 7h00 - 19h00</p>
-				<p class="hourly__text footer__text">Dimanche : 7h30 - 13h00</p>
-			  </div>
+                <h3 class="footer__title hourly__title">Horaire d'ouverture</h3>
+                <p class="hourly__text footer__text">Lundi : fermé</p>
+                <p class="hourly__text footer__text">
+                  Du mardi au samedi : 7h00 - 19h00
+                </p>
+                <p class="hourly__text footer__text">Dimanche : 7h30 - 13h00</p>
+              </div>
             </div>
             <div class="footer__contact">
               <div>
-				<h3 class="footer__title title__contact">Contact</h3>
-				<a href="#" class="contact__link footer__text">Nous contacter</a>
-				<a href="mailto:boulangerie@gmail.com" class="contact__mail footer__text">boulangerie@gmail.com</a>
-				<a href="#" class="contact__facebook">
-				  <img
-					src="./img/footer/facebook.svg"
-					alt="facebook"
-					class="facebook__img"
-				  />
-				</a>
-			  </div>
+                <h3 class="footer__title title__contact">Contact</h3>
+                <a href="#" class="contact__link footer__text"
+                  >Nous contacter</a
+                >
+                <a
+                  href="mailto:boulangerie@gmail.com"
+                  class="contact__mail footer__text"
+                  >boulangerie@gmail.com</a
+                >
+                <a href="#" class="contact__facebook">
+                  <img
+                    src="./img/footer/facebook.svg"
+                    alt="facebook"
+                    class="facebook__img"
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div class="footer__copyright">
@@ -442,7 +473,9 @@
               alt="copyright"
               class="copyright__img"
             />
-            <p class="copyright__text footer__text">Copyright - Boulangerie Victor Hugo</p>
+            <p class="copyright__text footer__text">
+              Copyright - Boulangerie Victor Hugo
+            </p>
           </div>
         </div>
       </div>
