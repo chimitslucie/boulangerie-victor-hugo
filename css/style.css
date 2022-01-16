@@ -833,7 +833,7 @@ a.footer__text:hover,
   .nav.medium.open .nav__list {
     height: 100%;
     max-height: 800px;
-    transition: all .5s linear;
+    transition: all 0.5s linear;
   }
 
   .nav__list {
@@ -863,6 +863,18 @@ a.footer__text:hover,
 
   .logo-hidden-medium {
     display: none;
+  }
+
+  .header {
+    height: calc(100vh - 487px);
+  } 
+
+  .header__title {
+    font-size: 40px;
+  }
+
+  .slider__img {
+    height: calc(100vh - 487px);
   }
 }
 
