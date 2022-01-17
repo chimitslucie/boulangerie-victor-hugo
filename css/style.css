@@ -876,6 +876,10 @@ a.footer__text:hover,
   .slider__img {
     height: calc(100vh - 487px);
   }
+
+  .presentation__content {
+    grid-column-gap: 0;
+  }
 }
 
 @media (max-width: 576px) {
