@@ -23,7 +23,7 @@ $(document).ready(function() {
         infinite: true,
         dots: false,
         arrows: true,
-        autoplay: false,
+        autoplay: true,
         prevArrow: $('.left'),
         nextArrow: $('.right')
     });
