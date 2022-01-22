@@ -922,6 +922,10 @@ a.footer__text:hover,
     margin-top: 50px;
   }
 
+  .team__content {
+    margin: 0 35px;
+  }
+
   .team__title {
     font-size: 30px;
   }
@@ -932,6 +936,11 @@ a.footer__text:hover,
 
   .team__text {
     font-size: 15px;
+  }
+
+  .team__img {
+    width: 235px;
+    height: 235px;
   }
 
   .products {
@@ -949,6 +958,12 @@ a.footer__text:hover,
 
   .products__content {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 50px;
+    gap: 40px;
+  }
+
+  .product__content--element {
+    margin: 0;
   }
 
   .banner {
