@@ -287,11 +287,11 @@ a {
   max-height: 334px;
 }
 
-#slick-slide10,
+/* #slick-slide10,
 #slick-slide11,
 #slick-slide12 {
   height: 334px;
-}
+} */
 
 .slider__img.promo__img {
   max-height: 334px;
@@ -867,15 +867,15 @@ a.footer__text:hover,
   }
 
   .header {
-    height: calc(100vh - 487px);
+    height: 300px;
   }
 
   .header__title {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .slider__img {
-    height: calc(100vh - 487px);
+    height: 300px;
   }
 
   .presentation__title {
@@ -901,6 +901,19 @@ a.footer__text:hover,
     margin-top: 50px;
   }
 
+  .slider.promo {
+    height: 200px;
+  }
+
+  .slider__img.promo__img {
+    height: 200px;
+  }
+
+  .promo__content {
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
+
   .promo__title {
     font-size: 30px;
   }
@@ -921,6 +934,11 @@ a.footer__text:hover,
 
   .slider__content {
     margin-top: 50px;
+  }
+
+  .arrows {
+    width: 20px;
+    height: 40px;
   }
 
   .team__content {
@@ -966,10 +984,18 @@ a.footer__text:hover,
 
   .product__content--element {
     margin: 0;
+    width: 100%;
+  }
+
+  .btn.btn__product {
+    width: 200px;
+    height: 60px;
+    font-size: 18px;
   }
 
   .banner {
     margin-top: 50px;
+    height: 200px;
   }
 
   .banner__text {
@@ -991,14 +1017,40 @@ a.footer__text:hover,
 
   .content__contact {
     flex-direction: column-reverse;
+    margin-top: 50px;
   }
 
   .contact__content {
+    margin-top: 0px;
+  }
+
+  .form {
     margin-top: 50px;
+  }
+
+  .contact__form:nth-child(3) {
+    margin-bottom: 73px;
+  }
+
+  .btn.btn__form {
+    width: 200px;
+    height: 50px;
   }
 
   .footer {
     margin-top: 50px;
+  }
+
+  .footer__text {
+    font-size: 14px;
+  }
+
+  .footer__copyright {
+    margin-top: 50px;
+  }
+
+  .copyright__img {
+    margin-right: 10px;
   }
 }
 
@@ -1039,6 +1091,7 @@ a.footer__text:hover,
   .presentation__content {
     grid-template-columns: repeat(1, 1fr);
     margin-top: 30px;
+    text-align: center;
   }
 
   .presentation__text {
@@ -1047,6 +1100,19 @@ a.footer__text:hover,
 
   .banner__promotion {
     margin-top: 30px;
+  }
+  /* 
+  .promo__content {
+    margin-top: 45px;
+    margin-bottom: 0;
+  } */
+
+  .promo__title {
+    font-size: 25px;
+  }
+
+  .promo__text {
+    font-size: 20px;
   }
 
   .equipe__title {
@@ -1057,6 +1123,10 @@ a.footer__text:hover,
   .equipe__title::after {
     width: 69px;
     margin-top: 7px;
+  }
+
+  .team__content {
+    justify-content: space-around;
   }
 
   .text__content {
@@ -1078,8 +1148,8 @@ a.footer__text:hover,
   }
 
   .team__img {
-    width: 110px;
-    height: 113px;
+    width: 130px;
+    height: 150px;
   }
 
   .products {
@@ -1102,6 +1172,11 @@ a.footer__text:hover,
 
   .product__content--element {
     width: 100%;
+  }
+
+  .btn.btn__form {
+    width: 180px;
+    height: 50px;
   }
 
   .banner {
@@ -1130,9 +1205,17 @@ a.footer__text:hover,
     margin-top: 30px;
   }
 
+  .content__title:last-child {
+    margin-bottom: 30px;
+  }
+
   .contact__content {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
+  }
+
+  .contact__element {
+    margin-bottom: 20px;
   }
 
   .content__title {
@@ -1157,15 +1240,53 @@ a.footer__text:hover,
     font-size: 15px;
   }
 
+  .contact__form {
+    margin-bottom: 30px;
+  }
+
+  .contact__form:nth-child(3) {
+    margin-bottom: 63px;
+  }
+
   .footer {
     margin-top: 30px;
   }
 
   .footer__content {
     grid-template-columns: repeat(1, 1fr);
+    padding-top: 30px;
+    justify-items: start;
   }
 
-  .footer__content {
-    justify-content: start;
+  .footer__title {
+    font-size: 18px;
+    margin: 26px 0 20px;
+  }
+
+  .footer__text {
+    font-size: 14px;
+  }
+
+  .page__item,
+  .hourly__text,
+  .contact__mail {
+    margin-bottom: 5px;
+  }
+
+  .contact__mail {
+    margin-top: 5px;
+  }
+
+  .footer__copyright {
+    margin-top: 55px;
+  }
+
+  .copyright__img {
+    width: 13px;
+  }
+
+  .copyright__text {
+    font-size: 12px;
+    margin-left: 5px;
   }
 }
